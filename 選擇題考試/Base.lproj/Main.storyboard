@@ -1,24 +1,246 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CK4-q6-l8C">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Cover View Controller-->
+        <scene sceneID="fvF-HK-gbp">
+            <objects>
+                <viewController id="kI4-ky-B5X" customClass="coverViewController" customModule="選擇題考試" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cgp-4t-LoE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6u-Yk-q3v">
+                                <rect key="frame" x="166" y="106" width="82.333333333333314" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdM-8Z-HY8">
+                                <rect key="frame" x="126.66666666666669" y="639" width="161" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="開始試題">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Bzw-CU-y2s"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="taiwan" translatesAutoresizingMaskIntoConstraints="NO" id="TWF-4y-pvq">
+                                <rect key="frame" x="20" y="222" width="374" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="13E-lp-kSH"/>
+                        <color key="backgroundColor" name="Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rBO-iK-Zfr"/>
+                    <connections>
+                        <outlet property="tiltleTexLabel" destination="g6u-Yk-q3v" id="t3e-S1-Xrv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bcv-Xi-kyF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1171.9626168224299" y="83.585313174946009"/>
+        </scene>
+        <!--Topic View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="topicViewController" customModule="選擇題考試" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="題目" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsX-d7-nBF">
+                                <rect key="frame" x="15" y="172" width="384" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="FZ9-1d-m3A"/>
+                                    <constraint firstAttribute="width" constant="384" id="Gg8-Rq-4gd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBK-4h-H35">
+                                <rect key="frame" x="54" y="469" width="130" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="NDM-ud-1qk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseAnswe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yEb-9J-Fll"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2j-eJ-Ywy">
+                                <rect key="frame" x="54" y="563" width="130" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="3Dp-Oy-fV0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseAnswe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L6l-iU-bV9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="題號" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmD-j3-B1e">
+                                <rect key="frame" x="160" y="88" width="94" height="51.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tmD-j3-B1e" secondAttribute="height" multiplier="95:52" id="ntq-kH-ObE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUB-aa-nUQ">
+                                <rect key="frame" x="248" y="563" width="130" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseAnswe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q4p-mN-RNm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPD-pQ-oAk">
+                                <rect key="frame" x="248" y="469" width="130" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Xal-La-lyR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseAnswe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ucy-e3-MEi"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Color"/>
+                        <constraints>
+                            <constraint firstItem="tmD-j3-B1e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="61K-M7-pIq"/>
+                            <constraint firstItem="TPD-pQ-oAk" firstAttribute="top" secondItem="gsX-d7-nBF" secondAttribute="bottom" constant="81" id="6uz-98-8NE"/>
+                            <constraint firstItem="NBK-4h-H35" firstAttribute="top" secondItem="gsX-d7-nBF" secondAttribute="bottom" constant="81" id="7wb-Qm-sEz"/>
+                            <constraint firstItem="gsX-d7-nBF" firstAttribute="top" secondItem="tmD-j3-B1e" secondAttribute="bottom" constant="32.5" id="8Jf-D2-O0N"/>
+                            <constraint firstItem="gsX-d7-nBF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="9eG-Ak-TEY"/>
+                            <constraint firstItem="TPD-pQ-oAk" firstAttribute="leading" secondItem="NBK-4h-H35" secondAttribute="trailing" constant="64" id="Ehk-BD-Sdj"/>
+                            <constraint firstItem="c2j-eJ-Ywy" firstAttribute="top" secondItem="NBK-4h-H35" secondAttribute="bottom" constant="52" id="Evl-C0-ijr"/>
+                            <constraint firstItem="gsX-d7-nBF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fir-Ii-oef"/>
+                            <constraint firstItem="MUB-aa-nUQ" firstAttribute="top" secondItem="TPD-pQ-oAk" secondAttribute="bottom" constant="52" id="FwE-G8-4Ze"/>
+                            <constraint firstItem="tmD-j3-B1e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GOI-qp-CFm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gsX-d7-nBF" secondAttribute="trailing" constant="15" id="PTQ-eo-36K"/>
+                            <constraint firstItem="MUB-aa-nUQ" firstAttribute="trailing" secondItem="TPD-pQ-oAk" secondAttribute="trailing" id="QUB-g7-5cj"/>
+                            <constraint firstItem="NBK-4h-H35" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="Ubo-zZ-ofR"/>
+                            <constraint firstItem="TPD-pQ-oAk" firstAttribute="centerY" secondItem="NBK-4h-H35" secondAttribute="centerY" id="W6a-sH-rTj"/>
+                            <constraint firstItem="c2j-eJ-Ywy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="diO-eT-Oiz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TPD-pQ-oAk" secondAttribute="trailing" constant="36" id="doe-6i-h2W"/>
+                            <constraint firstItem="MUB-aa-nUQ" firstAttribute="leading" secondItem="c2j-eJ-Ywy" secondAttribute="trailing" constant="64" id="hCV-9w-mNb"/>
+                            <constraint firstItem="tmD-j3-B1e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="jeg-tZ-zwH"/>
+                            <constraint firstItem="TPD-pQ-oAk" firstAttribute="top" secondItem="NBK-4h-H35" secondAttribute="top" id="o4M-Ud-RpZ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="09L-HK-48x"/>
+                    <connections>
+                        <outlet property="topicLabel" destination="gsX-d7-nBF" id="eXy-gU-dj6"/>
+                        <outlet property="topicNumberLael" destination="tmD-j3-B1e" id="ED0-of-dRs"/>
+                        <outletCollection property="chooseAnserButton" destination="NBK-4h-H35" collectionClass="NSMutableArray" id="Sk8-fZ-Ytt"/>
+                        <outletCollection property="chooseAnserButton" destination="TPD-pQ-oAk" collectionClass="NSMutableArray" id="Coh-b9-1ST"/>
+                        <outletCollection property="chooseAnserButton" destination="c2j-eJ-Ywy" collectionClass="NSMutableArray" id="Lhr-vY-gli"/>
+                        <outletCollection property="chooseAnserButton" destination="MUB-aa-nUQ" collectionClass="NSMutableArray" id="M9E-ct-RwP"/>
+                        <segue destination="rtz-8e-Ybv" kind="show" identifier="show" destinationCreationSelector="giveTheNextPageScore:sender:segueIdentifier:" id="IiO-5W-STt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2010" y="84"/>
+        </scene>
+        <!--Fraction View Controller-->
+        <scene sceneID="Pgt-iv-0bW">
+            <objects>
+                <viewController id="rtz-8e-Ybv" customClass="fractionViewController" customModule="選擇題考試" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xee-3N-7Un">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="您的分數" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcl-ox-KVN">
+                                <rect key="frame" x="102" y="170" width="210" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdz-4e-h70">
+                                <rect key="frame" x="117" y="267" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsi-zw-YjM">
+                                <rect key="frame" x="137" y="616" width="141" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="再考一次">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="agaib:" destination="rtz-8e-Ybv" eventType="touchUpInside" id="L5r-9R-1Sy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QzI-Ek-V3W"/>
+                        <color key="backgroundColor" name="Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sgQ-Xb-6qn"/>
+                    <connections>
+                        <outlet property="ShowFractionLabel" destination="wdz-4e-h70" id="TRs-eA-Yqk"/>
+                        <segue destination="kI4-ky-B5X" kind="show" identifier="again" id="79i-LR-qzp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5L-nr-WVn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2850.7246376811595" y="83.705357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ndJ-Lq-lI4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="CK4-q6-l8C" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="n4I-hL-fRv">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kI4-ky-B5X" kind="relationship" relationship="rootViewController" id="Z0t-CH-zaa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYs-h9-rwV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263.768115942029" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Bzw-CU-y2s"/>
+        <segue reference="79i-LR-qzp"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="taiwan" width="400" height="257"/>
+        <namedColor name="Color">
+            <color red="0.40000000000000002" green="0.70196078431372544" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
