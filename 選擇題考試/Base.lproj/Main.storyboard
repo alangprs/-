@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CK4-q6-l8C">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="kI4-ky-B5X" customClass="coverViewController" customModule="選擇題考試" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cgp-4t-LoE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6u-Yk-q3v">
-                                <rect key="frame" x="7" y="70" width="361" height="130"/>
+                                <rect key="frame" x="7" y="114" width="400" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="Dd7-sL-4dM"/>
                                 </constraints>
@@ -26,10 +26,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taiwan" translatesAutoresizingMaskIntoConstraints="NO" id="TWF-4y-pvq">
-                                <rect key="frame" x="7" y="200" width="361" height="257"/>
+                                <rect key="frame" x="7" y="244" width="400" height="257"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdM-8Z-HY8">
-                                <rect key="frame" x="7" y="564" width="361" height="60"/>
+                                <rect key="frame" x="7" y="702" width="400" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="開始試題">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,20 +67,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="topicViewController" customModule="選擇題考試" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="題目" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsX-d7-nBF">
-                                <rect key="frame" x="20" y="109" width="335" height="204"/>
+                                <rect key="frame" x="20" y="153" width="374" height="298"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="fXp-d8-wfE">
-                                <rect key="frame" x="60" y="493" width="255" height="100"/>
+                                <rect key="frame" x="60" y="631" width="294" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2j-eJ-Ywy">
-                                        <rect key="frame" x="0.0" y="0.0" width="95.666666666666671" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -90,7 +90,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUB-aa-nUQ">
-                                        <rect key="frame" x="159.66666666666666" y="0.0" width="95.333333333333343" height="100"/>
+                                        <rect key="frame" x="179" y="0.0" width="115" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -105,10 +105,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="Iy2-Bt-T8h">
-                                <rect key="frame" x="60" y="363" width="255" height="100"/>
+                                <rect key="frame" x="60" y="501" width="294" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBK-4h-H35">
-                                        <rect key="frame" x="0.0" y="0.0" width="95.666666666666671" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -118,7 +118,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPD-pQ-oAk">
-                                        <rect key="frame" x="159.66666666666666" y="0.0" width="95.333333333333343" height="100"/>
+                                        <rect key="frame" x="179" y="0.0" width="115" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -133,7 +133,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="題號" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmD-j3-B1e">
-                                <rect key="frame" x="100" y="35" width="175" height="24"/>
+                                <rect key="frame" x="100" y="79" width="214" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -170,24 +170,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2010" y="84"/>
+            <point key="canvasLocation" x="1949" y="84"/>
         </scene>
         <!--Fraction View Controller-->
         <scene sceneID="Pgt-iv-0bW">
             <objects>
                 <viewController id="rtz-8e-Ybv" customClass="fractionViewController" customModule="選擇題考試" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xee-3N-7Un">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的分數" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcl-ox-KVN">
-                                <rect key="frame" x="63" y="123" width="249" height="36"/>
+                                <rect key="frame" x="63" y="167" width="288" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdz-4e-h70">
-                                <rect key="frame" x="97.666666666666686" y="244" width="180" height="180"/>
+                                <rect key="frame" x="117" y="288" width="180" height="180"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="cAy-tz-7HQ"/>
@@ -198,7 +198,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsi-zw-YjM">
-                                <rect key="frame" x="126.66666666666669" y="557" width="122" height="48"/>
+                                <rect key="frame" x="146" y="695" width="122" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="再考一次">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -223,7 +223,6 @@
                     <navigationItem key="navigationItem" id="sgQ-Xb-6qn"/>
                     <connections>
                         <outlet property="ShowFractionLabel" destination="wdz-4e-h70" id="TRs-eA-Yqk"/>
-                        <segue destination="kI4-ky-B5X" kind="show" identifier="again" id="79i-LR-qzp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5L-nr-WVn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -248,10 +247,6 @@
             <point key="canvasLocation" x="263.768115942029" y="83.705357142857139"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="IiO-5W-STt"/>
-        <segue reference="79i-LR-qzp"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="taiwan" width="400" height="257"/>
         <namedColor name="Color">

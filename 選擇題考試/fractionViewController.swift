@@ -42,7 +42,7 @@ class fractionViewController: UIViewController {
     
     //點選按鈕回首頁
     @IBAction func agaib(_ sender: UIButton) {
-       performSegue(withIdentifier: "again", sender: nil) //回首頁
+        self.navigationController?.popToRootViewController(animated: true) //回首頁
     }
     
    

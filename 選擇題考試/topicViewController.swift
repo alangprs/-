@@ -23,7 +23,7 @@ class topicViewController: UIViewController {
             chooseAnserButton.shuffle() //打亂button答案順序
             //顯示答案的button文字
             chooseAnserButton[0].setTitle(topic[index].answer, for: .normal)
-            chooseAnserButton[0].titleLabel?.numberOfLines = 0
+            chooseAnserButton[0].titleLabel?.numberOfLines = 0 //讓button可以顯示超過一行文字
             chooseAnserButton[1].setTitle(topic[index].option01, for: .normal)
             chooseAnserButton[1].titleLabel?.numberOfLines = 0
             chooseAnserButton[2].setTitle(topic[index].Options02, for: .normal)
