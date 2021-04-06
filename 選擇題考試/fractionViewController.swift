@@ -8,7 +8,7 @@ class fractionViewController: UIViewController {
 
     var fraction:Fractions!
     var showTex = String()
-    
+    var showTwxView = ""
     //依照分數顯示不同文字func
     func go() -> String{
         switch fraction.fraction {
@@ -45,6 +45,13 @@ class fractionViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true) //回首頁
     }
     
-   
+    //彈跳出分享畫面
+    @IBAction func share(_ sender: Any) {
+        //分享視窗顯示內容
+        showTwxView = showTex + "我的分數\(fraction.fraction)"
+        let activity = UIActivityViewController(activityItems: [showTwxView], applicationActivities: nil)
+        self.present(activity, animated: true, completion: nil)
+    }
+    
 
 }
